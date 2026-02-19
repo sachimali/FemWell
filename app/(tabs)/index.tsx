@@ -1,5 +1,5 @@
-import OnboardingStep1 from '../onboarding/OnboardingStep1';
+import OnboardingFlow from '../onboarding/OnboardingFlow';
 
 export default function HomeScreen() {
-  return <OnboardingStep1 />;
+  return <OnboardingFlow />;
 }
