@@ -7,18 +7,21 @@ import OnboardingStep5 from "./OnboardingStep5";
 import OnboardingStep6 from "./OnboardingStep6";
 import OnboardingStep7 from "./OnboardingStep7";
 import OnboardingStep8 from "./OnboardingStep8";
+import Dashboard from "../screens/Dashboard";
 
 export default function OnboardingFlow() {
   const [step, setStep] = useState(1);
+  const [done, setDone] = useState(false);
 
-  const next = () => setStep((s) => Math.min(s + 1, 8));
+  const next = () => {
+    if (step === 8) { setDone(true); return; }
+    setStep((s) => s + 1);
+  };
   const back = () => setStep((s) => Math.max(s - 1, 1));
 
-  // Fake navigation object so each screen works as-is
-  const nav = {
-    navigate: next,
-    goBack: back,
-  };
+  const nav = { navigate: next, goBack: back };
+
+  if (done) return <Dashboard />;
 
   switch (step) {
     case 1: return <OnboardingStep1 navigation={nav} />;
