@@ -8,7 +8,7 @@ import {
   SafeAreaView,
   Dimensions,
 } from "react-native";
-import { COLORS, FONTS, RADIUS } from "../onboarding/theme";
+import { COLORS, FONTS, RADIUS, SHADOW } from "../constants/theme";
 
 const { width } = Dimensions.get("window");
 

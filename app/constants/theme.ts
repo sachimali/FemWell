@@ -23,6 +23,7 @@ export const COLORS = {
     // Peach (accent)
     peach: "#E8956D",
     peachLight: "#FDF0EA",
+    peachBorder: "#F5CDB0",
   
     // Text
     text: "#2D1A24",
@@ -58,6 +59,13 @@ export const COLORS = {
       shadowOpacity: 0.25,
       shadowRadius: 12,
       elevation: 6,
+    },
+    card: {
+      shadowColor: "#2D1A24",
+      shadowOffset: { width: 0, height: 2 },
+      shadowOpacity: 0.06,
+      shadowRadius: 8,
+      elevation: 3,
     },
   };
   

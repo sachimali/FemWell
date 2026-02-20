@@ -1,5 +1,5 @@
-import OnboardingFlow from '../onboarding/OnboardingFlow';
+import AppFlow from '../AppFlow';
 
 export default function HomeScreen() {
-  return <OnboardingFlow />;
+  return <AppFlow />;
 }

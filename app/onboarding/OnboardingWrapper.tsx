@@ -1,15 +1,15 @@
 import React from "react";
 import {
-    KeyboardAvoidingView,
-    Platform,
-    SafeAreaView,
-    ScrollView,
-    StyleSheet,
-    Text,
-    TouchableOpacity,
-    View,
+  KeyboardAvoidingView,
+  Platform,
+  SafeAreaView,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
 } from "react-native";
-import { COLORS, FONTS, RADIUS, SHADOW, TOTAL_STEPS } from "./theme";
+import { COLORS, FONTS, RADIUS, SHADOW, TOTAL_STEPS } from "../constants/theme";
 
 interface Props {
   step: number;

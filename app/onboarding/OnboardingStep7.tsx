@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import OnboardingWrapper from "./OnboardingWrapper";
-import { COLORS, FONTS, RADIUS } from "./theme";
+import { COLORS, FONTS, RADIUS, SHADOW, TOTAL_STEPS } from "../constants/theme";
 
 const MOODS = [
   { id: "great", label: "Great", emoji: "😊" },

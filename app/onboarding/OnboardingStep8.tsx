@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { View, Text, TouchableOpacity, StyleSheet, Switch } from "react-native";
 import OnboardingWrapper from "./OnboardingWrapper";
-import { COLORS, FONTS, RADIUS, SHADOW } from "./theme";
+import { COLORS, FONTS, RADIUS, SHADOW, TOTAL_STEPS } from "../constants/theme";
 
 const NOTIFICATIONS = [
   { id: "workout", label: "Workout reminders", emoji: "💪", desc: "Daily push to show up" },
