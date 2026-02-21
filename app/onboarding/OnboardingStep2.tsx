@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
-import OnboardingWrapper from "./OnboardingWrapper";
-import { COLORS, FONTS, RADIUS, SHADOW, TOTAL_STEPS } from "../constants/theme";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import OnboardingWrapper from "../../components/OnboardingWrapper";
+import { COLORS, FONTS, RADIUS } from "../../constants/theme";
 
 const CONDITIONS = [
   { id: "pcos", label: "PCOS", emoji: "🌸", desc: "Polycystic Ovary Syndrome" },

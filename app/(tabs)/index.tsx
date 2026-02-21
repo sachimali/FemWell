@@ -1,5 +1,5 @@
-import AppFlow from '../AppFlow';
+import AppFlow from "../AppFlow";
 
-export default function HomeScreen() {
+export default function Index() {
   return <AppFlow />;
 }

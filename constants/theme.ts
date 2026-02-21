@@ -1,53 +1,118 @@
-/**
- * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
- * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
- */
+// FemWell — Design System
 
-import { Platform } from 'react-native';
+export const COLORS = {
+  white: "#FFFFFF",
+  background: "#FFFBFC",
+  rose: "#C4748A",
+  roseDark: "#8B4E6B",
+  roseMid: "#A85E7A",
+  roseLight: "#F9EEF1",
+  roseBorder: "#EDD8E0",
+  lavender: "#A98CC4",
+  lavenderLight: "#F3EDF9",
+  lavenderBorder: "#E0D4F0",
+  sage: "#6AAB7B",
+  sageLight: "#EAF4EC",
+  sageBorder: "#C8E6CF",
+  peach: "#E8956D",
+  peachLight: "#FDF0EA",
+  peachBorder: "#F5CDB0",
+  text: "#2D1A24",
+  textMuted: "#9E7A8A",
+  textLight: "#C9A8B8",
+  border: "#EDD8E0",
+  borderLight: "#F5EBF0",
+  card: "#FFFFFF",
+  divider: "#F0E4EA",
+};
 
-const tintColorLight = '#0a7ea4';
-const tintColorDark = '#fff';
+export const FONTS = {
+  xs: 11,
+  sm: 13,
+  md: 15,
+  lg: 17,
+  xl: 22,
+  xxl: 28,
+  xxxl: 34,
+};
 
-export const Colors = {
-  light: {
-    text: '#11181C',
-    background: '#fff',
-    tint: tintColorLight,
-    icon: '#687076',
-    tabIconDefault: '#687076',
-    tabIconSelected: tintColorLight,
+export const RADIUS = {
+  sm: 8,
+  md: 14,
+  lg: 20,
+  xl: 28,
+  full: 999,
+};
+
+export const SHADOW = {
+  sm: {
+    shadowColor: "#2D1A24",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.05,
+    shadowRadius: 6,
+    elevation: 2,
   },
-  dark: {
-    text: '#ECEDEE',
-    background: '#151718',
-    tint: tintColorDark,
-    icon: '#9BA1A6',
-    tabIconDefault: '#9BA1A6',
-    tabIconSelected: tintColorDark,
+  md: {
+    shadowColor: "#2D1A24",
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.08,
+    shadowRadius: 12,
+    elevation: 4,
+  },
+  rose: {
+    shadowColor: "#8B4E6B",
+    shadowOffset: { width: 0, height: 6 },
+    shadowOpacity: 0.25,
+    shadowRadius: 12,
+    elevation: 6,
   },
 };
 
-export const Fonts = Platform.select({
-  ios: {
-    /** iOS `UIFontDescriptorSystemDesignDefault` */
-    sans: 'system-ui',
-    /** iOS `UIFontDescriptorSystemDesignSerif` */
-    serif: 'ui-serif',
-    /** iOS `UIFontDescriptorSystemDesignRounded` */
-    rounded: 'ui-rounded',
-    /** iOS `UIFontDescriptorSystemDesignMonospaced` */
-    mono: 'ui-monospace',
+export const TOTAL_STEPS = 8;
+
+export const PHASE_CONFIG = {
+  Menstrual: {
+    label: "Menstrual",
+    days: "Days 1–5",
+    color: "#C4748A",
+    light: "#F9EEF1",
+    border: "#EDD8E0",
+    energy: "Low",
+    intensity: "60%",
+    workoutFocus: "Gentle movement & rest",
+    nutritionFocus: "Iron-rich, anti-inflammatory",
   },
-  default: {
-    sans: 'normal',
-    serif: 'serif',
-    rounded: 'normal',
-    mono: 'monospace',
+  Follicular: {
+    label: "Follicular",
+    days: "Days 6–14",
+    color: "#6AAB7B",
+    light: "#EAF4EC",
+    border: "#C8E6CF",
+    energy: "High",
+    intensity: "100%",
+    workoutFocus: "Heavy lifting, HIIT, PRs",
+    nutritionFocus: "Lean protein, complex carbs",
   },
-  web: {
-    sans: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
-    serif: "Georgia, 'Times New Roman', serif",
-    rounded: "'SF Pro Rounded', 'Hiragino Maru Gothic ProN', Meiryo, 'MS PGothic', sans-serif",
-    mono: "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
+  Ovulation: {
+    label: "Ovulation",
+    days: "Days 15–17",
+    color: "#E8956D",
+    light: "#FDF0EA",
+    border: "#F5CDB0",
+    energy: "Peak",
+    intensity: "100%",
+    workoutFocus: "Peak performance, max effort",
+    nutritionFocus: "Fiber, antioxidants, hydration",
   },
-});
+  Luteal: {
+    label: "Luteal",
+    days: "Days 18–28",
+    color: "#A98CC4",
+    light: "#F3EDF9",
+    border: "#E0D4F0",
+    energy: "Moderate",
+    intensity: "70%",
+    workoutFocus: "Moderate intensity, stress relief",
+    nutritionFocus: "Magnesium, B6, complex carbs",
+  },
+};

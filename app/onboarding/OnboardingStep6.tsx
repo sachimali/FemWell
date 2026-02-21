@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { View, Text, TouchableOpacity, StyleSheet, TextInput } from "react-native";
-import OnboardingWrapper from "./OnboardingWrapper";
-import { COLORS, FONTS, RADIUS, SHADOW, TOTAL_STEPS } from "../constants/theme";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import OnboardingWrapper from "../../components/OnboardingWrapper";
+import { COLORS, FONTS, RADIUS } from "../../constants/theme";
 
 const REGULARITY = [
   { id: "regular", label: "Regular", emoji: "📅", desc: "Predictable cycle" },

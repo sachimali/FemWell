@@ -1,16 +1,15 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import {
-  View,
+  Dimensions,
+  KeyboardAvoidingView,
+  Platform,
+  SafeAreaView,
+  ScrollView,
+  StyleSheet,
   Text,
   TextInput,
   TouchableOpacity,
-  ScrollView,
-  StyleSheet,
-  SafeAreaView,
-  KeyboardAvoidingView,
-  Platform,
-  Animated,
-  Dimensions,
+  View
 } from "react-native";
 
 const { width } = Dimensions.get("window");
